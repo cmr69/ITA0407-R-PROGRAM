@@ -1,0 +1,18 @@
+
+# Create a character vector
+a <- c("Short", "Medium", "Tall",
+       "Medium", "Tall", "Short")
+
+# Convert the vector into a factor
+b <- factor(a)
+print(b)
+
+# Set random seed
+set.seed(10)
+
+# Generate random letters from A to E
+c <- sample(LETTERS[1:5], 8, replace = TRUE)
+
+# Convert letters into a factor
+d <- factor(c)
+print(d)
