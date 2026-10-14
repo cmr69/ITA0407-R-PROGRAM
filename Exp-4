@@ -1,0 +1,18 @@
+
+# Create a vector
+a <- 1:8
+
+# Create an array with dimension names
+b <- array(a, dim = c(2, 2, 2),
+           dimnames = list(
+             Row = c("R1", "R2"),
+             Column = c("C1", "C2"),
+             Table = c("T1", "T2")
+           ))
+
+# Display the complete array
+print(b)
+
+# Print specific elements
+print(b["R2", "C1", "T2"])
+print(b["R1", "C2", "T1"])
