@@ -1,0 +1,17 @@
+
+# Set random seed
+set.seed(123)
+
+# Generate 20 random numbers from a normal distribution
+x <- rnorm(20, mean = 0, sd = 1)
+
+# Display random numbers
+print("Random numbers:")
+print(x)
+
+# Round numbers to the nearest integer
+rounded_x <- round(x)
+
+# Count occurrences of each rounded value
+print("Occurrences:")
+print(table(rounded_x))
