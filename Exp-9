@@ -1,0 +1,14 @@
+
+# Remove variable c if it exists
+if (exists("c")) {
+  rm(c)
+}
+
+# Create an empty plot
+plot(0, 0,
+     type = "n",
+     xlim = c(-10, 10),
+     ylim = c(-5, 5),
+     xlab = "X-axis",
+     ylab = "Y-axis",
+     main = "Empty Plot with Axis Limits")
