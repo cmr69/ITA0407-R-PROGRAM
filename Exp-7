@@ -1,0 +1,32 @@
+
+# 1. Find factors of a number
+n <- 12
+factors <- c()
+
+for (i in 1:n) {
+  if (n %% i == 0) {
+    factors <- c(factors, i)
+  }
+}
+
+print("Factors of the number:")
+print(factors)
+
+# 2. Generate 10 random integers
+set.seed(123)
+
+print("10 random integers:")
+print(sample(-50:50, 10, replace = TRUE))
+
+# 3. FizzBuzz from 1 to 100
+for (i in 1:100) {
+  if (i %% 15 == 0) {
+    print("FizzBuzz")
+  } else if (i %% 3 == 0) {
+    print("Fizz")
+  } else if (i %% 5 == 0) {
+    print("Buzz")
+  } else {
+    print(i)
+  }
+}
